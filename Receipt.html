@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <title>Reciept</title>
+    <style>
+    body{
+        background-color: antiquewhite;
+    }
+
+    .reciept-container{
+        width: 80%;
+        border: 1px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        box-shadow:gray;
+    }
+    .brand-logo{
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+
+    }
+    .brand-title{
+        text-align: center;
+    }
+    .brand-address{
+        text-align: right;
+    }
+    .brand-mnumber{
+        text-align: right;
+    }
+    .reciept-title{
+        text-align: center;
+        font-size: 30px;
+        margin:20 0px; 
+    }
+    .reciept-body{
+        position: relative;
+    }
+    .table {
+            margin-left: auto;
+            margin-right: auto;
+            font-size:30px;
+            justify-content: space-evenly;
+padding: 10px;
+        }
+        
+        .end {
+            display: flex;
+            font-size: xx-large;
+            justify-content: flex-end;
+        }
+
+        .total {
+            margin-right: 230px;
+        }
+        .signature{
+            text-align: right;
+            margin-top: 200px;
+            margin-right: 40px;
+            font-size: 20px;
+        }
+.stamp{
+    width: ;
+
+}
+    </style>
+    <body>
+        <div class="reciept-container">
+           
+            <div class= "reciept-header">
+                <img src="sugar.png" class="brand-logo"/>
+                <h2 class="brand-title">Sugar Cosmetics</h2>
+                <p class="brand-address">Shop No 103, College Rd, near Vision Hospital,<br> Yashogandha Society, Dattatreya Darshan Colony,<br> Canada Corner, Nashik,<br> Maharashtra 422005</p>
+            <p class="brand-mnumber">+91-6873678779</p>
+            </div>
+            <hr>
+          
+            <div class= "reciept-body">
+                <table border="0" class="table">
+                   <thead class="head">
+                       <th>Qty</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Amount</th>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Lipstick</td>
+                            <td>600</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Foundation</td>
+                            <td>800</td>
+                            <td>800</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Primer</td>
+                            <td>1000</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>blush(pink nude)</td>
+                            <td>1800</td>
+                            <td>1800</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Eyeshadow</td>
+                            <td>8000</td>
+                            <td>8000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="end">
+                <p class="total">
+                    Total:-
+                </p>
+                <p> Rs.13,800/-</p>
+            </div>
+            <img src="stamp.png" class="stamp"/>
+            <p class="signature">Acountant Signature</p>
+            
+            <div class= "reciept-footer">
+
+</div>
+        </div>
+    </body>
+</html>
