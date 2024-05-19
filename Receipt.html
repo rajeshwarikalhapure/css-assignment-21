@@ -38,34 +38,58 @@
     }
     .reciept-body{
         position: relative;
+        border-bottom: 1px dashed gray;
+
     }
-    .table {
-            margin-left: auto;
-            margin-right: auto;
-            font-size:30px;
-            justify-content: space-evenly;
-padding: 10px;
+    .receipt-title {
+            text-align: center;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+
+        .receipt-details {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .receipt-key {
+            color: gray;
+            width: 30%;
+        }
+
+        .receipt-value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
         }
         
-        .end {
-            display: flex;
-            font-size: xx-large;
-            justify-content: flex-end;
-        }
-
-        .total {
-            margin-right: 230px;
-        }
-        .signature{
-            text-align: right;
-            margin-top: 200px;
-            margin-right: 40px;
+          .stamp{
+            width: 150px;
+            position: absolute;
+            right: 0;
+            bottom: 18px;
+}
+.signature{
+            text-align: end;
+            margin-top: 170px;
             font-size: 20px;
         }
-.stamp{
-    width: ;
+.reciept-footer {
+            text-align: center;
+            background-color: #e3abca;
+            padding: 10px 0;
+        }
+        
+        /* Normal Devices  */
+        @media screen and (min-width: 601px) and (max-width: 768px) {}
 
-}
+        /* Tablets Devices  */
+        @media screen and (min-width: 769px) and (max-width: 992px) {}
+
+        /* Large Devices  */
+        @media screen and (min-width: 993px) and (max-width: 1200px) {}
     </style>
     <body>
         <div class="reciept-container">
@@ -79,57 +103,45 @@ padding: 10px;
             <hr>
           
             <div class= "reciept-body">
-                <table border="0" class="table">
-                   <thead class="head">
-                       <th>Qty</th>
-                        <th>Description</th>
-                        <th>Unit Price</th>
-                        <th>Amount</th>
-                        </thead>
-                    <tbody>
-                        <tr>
-                            <td>2</td>
-                            <td>Lipstick</td>
-                            <td>600</td>
-                            <td>1200</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Foundation</td>
-                            <td>800</td>
-                            <td>800</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Primer</td>
-                            <td>1000</td>
-                            <td>2000</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>blush(pink nude)</td>
-                            <td>1800</td>
-                            <td>1800</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Eyeshadow</td>
-                            <td>8000</td>
-                            <td>8000</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="end">
-                <p class="total">
-                    Total:-
-                </p>
-                <p> Rs.13,800/-</p>
-            </div>
-            <img src="stamp.png" class="stamp"/>
+                <h3 class="receipt-title">Payment Receipt</h3>
+                <div class="receipt-details">
+
+                    <div class="receipt-key">Receipt No.:</div>
+                    <div class="receipt-value">53456789</div>
+    
+                </div>
+    
+                <div class="receipt-details">
+    
+                    <div class="receipt-key">Payment Date:</div>
+                    <div class="receipt-value">19 May 2024</div>
+    
+                </div>
+                <div class="receipt-details">
+    
+                    <div class="receipt-key">Total items:</div>
+                    <div class="receipt-value">6</div>
+    
+                </div>
+    
+                <div class="receipt-details">
+    
+                    <div class="receipt-key">Amount:</div>
+                    <div class="receipt-value">30000/-</div>
+    
+                </div>
+    
+                <div class="receipt-details">
+    
+                    <div class="receipt-key">Payment Mode:</div>
+                    <div class="receipt-value">Cash</div>
+    
+                </div>
+            <img src="c:\Users\DELL\Downloads\klipartz.com.png" class="stamp"/>
             <p class="signature">Acountant Signature</p>
-            
+            </div>
             <div class= "reciept-footer">
+                <p>Thank you for visiting Sugar Cosmetics</p>
 
 </div>
         </div>
